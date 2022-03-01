@@ -48,17 +48,26 @@ const displayMobileDetail = data => {
     <img src="${data.image}" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Main Features:</h5>
+              <p>${data.releaseDate ? data.releaseDate: 'not available'}</p>
               <p class="card-text">Storage: ${data.mainFeatures.storage}</p>
               <p class="card-text">Display: ${data.mainFeatures.displaySize}</p>
               <p class="card-text">Chipset: ${data.mainFeatures.chipSet}</p>
               <p class="card-text">Memory: ${data.mainFeatures.memory}</p>
               <p class="card-text">Sensors: ${data.mainFeatures.sensors[0]}</p>
+              <p class="card-text">${data.mainFeatures.sensors[0]}</p>
               <p class="card-text">${data.mainFeatures.sensors[1]}</p>
               <p class="card-text">${data.mainFeatures.sensors[2]}</p>
               <p class="card-text">${data.mainFeatures.sensors[3]}</p>
               <p class="card-text">${data.mainFeatures.sensors[4]}</p>
               <p class="card-text">${data.mainFeatures.sensors[5]}</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <h5>Others:</h5>
+              <p>Wlan: ${data.others.WLAN ? data.others.WLAN: 'not available'}</p>
+              <p>Blurtooth: ${data.others.Bluetooth ? data.others.Bluetooth: 'not available'}</p>
+              <p>GPS: ${data.others.GPS ? data.others.GPS: 'not available'}</p>
+              <p>NFC: ${data.others.NFC ? data.others.NFC: 'not available'}</p>
+              <p>Radio: ${data.others.Radio ? data.others.Radio: 'not available'}</p>
+              <p>USB: ${data.others.USB ? data.others.USB: 'not available'}</p>
+
             </div>
     `;
     mobileDetail.appendChild(div);
