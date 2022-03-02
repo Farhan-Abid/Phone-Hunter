@@ -11,6 +11,7 @@ const searchMobile = () => {
   searchField.value = '';
 
 }
+// displaying the search result 
 
 const displaySearchResult = phones => {
   console.log(phones);
@@ -42,6 +43,7 @@ const displaySearchResult = phones => {
   
 }
 
+// showing single mobile details 
 
 const loadMobileDetail = mobileId => {
   console.log(mobileId);
